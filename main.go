@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"log"
+	"fmt"
 	"math/rand"
 	"time"
 )
@@ -38,5 +38,5 @@ func main() {
 		pwd += pwdTable[r : r+1]
 	}
 
-	log.Println(pwd)
+	fmt.Println(pwd)
 }
