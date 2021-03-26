@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/atotto/clipboard"
 	"math/rand"
 	"time"
 )
@@ -38,5 +39,6 @@ func main() {
 		pwd += pwdTable[r : r+1]
 	}
 
+	_ = clipboard.WriteAll(pwd)
 	fmt.Println(pwd)
 }
